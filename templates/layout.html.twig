@@ -1,83 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="acceda.mx">
-    <meta name="author" content="">
-    <link rel="icon" href="{{asset('img/acceda-circle.png')}}">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="Acceda - Empresa innovadora 100% mexicana, especializada en soluciones de registro para eventos y controles de acceso.">
+		<meta name="keywords" content="registro,eventos,acceda,acceda.mx,soluciones de registro,eventos registro,registro eventos,registro soluciones">
 
-    <title>ACCEDA - Servicio Profesional de Registro</title>
+		<title>Servicio Profesional de Registro | Acceda</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
+		<!-- Styles -->
+		<link href="{{asset('css/core.min.css')}}" rel="stylesheet">
+		<link href="{{asset('css/thesaas.min.css')}}" rel="stylesheet">
+		<link href="{{asset('css/style.css')}}" rel="stylesheet">
+		<link href="{{asset('css/main.css')}}" rel="stylesheet">
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="{{asset('css/ie10-viewport-bug-workaround.css')}}" rel="stylesheet">
+		<!-- Favicons -->
+		<link rel="apple-touch-icon" href="{{asset('img/apple-touch-icon.png')}}">
+		<link rel="icon" href="{{asset('images/acceda-circle.png')}}">
+	</head>
 
-    <!-- Custom styles for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
-    <link href="{{asset('css/cover.css')}}" rel="stylesheet">
-    <link href="{{asset('css/custom.css')}}" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
+	<body id="home">
 
-  <body>
 
-    <div class="site-wrapper">
+		<!-- Topbar -->
+		<nav class="topbar topbar-inverse topbar-expand-sm topbar-sticky">
+			<div class="container">
+				
+				<div class="topbar-left">
+					<a class="topbar-brand" href="{{asset('inicio')}}">
+						<img class="logo-default" src="{{asset('images/acceda-nav-color-sm.png')}}" alt="logo" width="150">
+						<img class="logo-inverse" src="{{asset('images/acceda-nav-white-sm.png')}}" alt="logo" width="150">
+					</a>
+				</div>
+				<div class="topbar-right">
+					<ul class="topbar-nav nav">
+						<li class="nav-item"><a class="nav-link" href="#" data-scrollto="home">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-acerca">Acerca de Acceda</a></li>
+						<li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-servicios">Servicios</a></li>
+						<li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-ventajas">Ventajas</a></li>
+						<li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-contacto">Contacto</a></li>
+					</ul>
+					<button class="topbar-toggler">&#9776;</button>
+				</div>
+			</div>
+		</nav>
+		<!-- END Topbar -->
+		<!-- Header -->
+		<header class="header header-inverse h-fullscreen pb-80" data-parallax="{{asset('images/acceda-bground-001.png')}}">
+			<div class="container text-center">
 
-        <div class="site-wrapper-inner">
+				<div class="row h-full">
+					<div class="col-12 col-lg-8 offset-lg-2 align-self-center">
 
-            <div class="cover-container">
+						<h1 class="display-1 hidden-sm-down"><img src="{{asset('images/acceda-white-lg.png')}}"></h1>
+						<h1 class="fs-40 hidden-md-up"><img src="{{asset('images/acceda-white-lg.png')}}"></h1>
+						<br>
+						<p class="fs-20 w-600 mx-auto hidden-sm-down">Acceda a sus eventos de forma diferente</p>
+						<p class="fs-20 hidden-sm-up">Acceda a sus eventos de forma diferente</p>
+						<hr class="w-80">
+						<br>
+						<a class="btn btn-xl btn-round btn-outline btn-white w-300 hidden-sm-down" href="#" data-scrollto="section-contacto">¡Contactar Ahora!</a>
 
-                <div class="masthead clearfix">
-                    <div class="inner">
-                        <h3 class="masthead-brand"></h3>
-                        <nav>
-                            <ul class="nav masthead-nav">
+					</div>
 
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
+					<div class="col-12 align-self-end text-center">
+						<a class="scroll-down-3 scroll-down-inverse" href="#" data-scrollto="section-acerca">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+					</div>
 
-                <div class="inner cover">
-                   {% block content %}{% endblock %}
-                </div>
+				</div>
 
-                <div class="mastfoot">
-                    <div class="inner">
-                        <p>Designed by <a href="http://warptech.mx">warptech.mx</a></p>
-                    </div>
-                </div>
+			</div>
+		</header>
+		<!-- END Header -->
+		<!-- Main container -->
+		{%  block content %}
+		
+		{% endblock %}
+		<!-- END Main container -->
 
-            </div>
+		<!-- Footer -->
+		<footer class="site-footer">
+			<div class="container">
+				<div class="row gap-y align-items-center">
+					<div class="col-12 col-lg-2">
+						<p class="text-center text-lg-left">
+							<a href="index.html"><img class="logo-default" src="{{asset('images/acceda-nav-color-sm.png')}}" alt="logo" width="150"></a>
+						</p>
+					</div>
 
-        </div>
+					<div class="col-12 col-lg-8">
+						<ul class="nav nav-primary nav-hero">
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-scrollto="home">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-scrollto="section-acerca">Acerca de Acceda</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-scrollto="section-servicios">Servicios</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-scrollto="section-ventajas">Ventajas</a>
+							</li>
+							<li class="nav-item" >
+								<a class="nav-link" href="#" data-scrollto="section-contacto">Contacto</a>
+							</li>
+						</ul>
+					</div>
 
-    </div>
+					<div class="col-12 col-lg-2">
+						<div class="social text-center text-lg-right">
+							<!--
+							<a class="social-facebook" href=""><i class="fa fa-facebook"></i></a>
+							<a class="social-twitter" href=""><i class="fa fa-twitter"></i></a>
+							<a class="social-instagram" href=""><i class="fa fa-instagram"></i></a>
+							<a class="social-dribbble" href=""><i class="fa fa-dribbble"></i></a>
+							-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- END Footer -->
 
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
-        _gaq.push(['_trackPageview']);
 
-        (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="{{asset('js/bootstrap.min.js')}}"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="{{asset('js/ie10-viewport-bug-workaround.js')}}"></script>
-  </body>
+
+		<!-- Scripts -->
+		<script src="{{asset('js/core.min.js')}}"></script>
+		<script src="{{asset('js/thesaas.min.js')}}"></script>
+		<script src="{{asset('js/script.js')}}"></script>
+
+	</body>
 </html>
