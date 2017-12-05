@@ -1,0 +1,342 @@
+{% extends "layout.html.twig" %}
+
+{% block content %}
+<main class="main-content">
+		<!--
+		|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+		| Features
+		|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+		!-->
+		<section class="section bg-gray">
+			<div class="container">
+				<header class="section-header" id="section-acerca">
+					<small>Información</small>
+					<h2>Acerca de Acceda</h2>
+					<hr>
+					<p class="lead"><strong>Empresa innovadora 100% mexicana</strong>, especializada en <strong>soluciones de registro</strong> para eventos y controles de acceso.</p>
+				</header>
+				<div class="row gap-5">
+					<div class="col-12 col-md-4">
+						<ul class="nav nav-vertical">
+							<li class="nav-item">
+								<a class="nav-link active" data-toggle="tab" href="#tab-1">
+									<h6><i class="fa fa-chevron-right" aria-hidden="true"></i> Implementación de <strong>Nuevas Tecnologías</strong> </h6>
+									<p>Desarrollamos soluciones competitivas de última generación </p>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#tab-2">
+									<h6><i class="fa fa-chevron-right" aria-hidden="true"></i> Desarrollo de <strong>Soluciones a la Medida</strong></h6>
+									<p>Integramos diferentes tecnologías para brindarte la mejor solución.</p>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#tab-3">
+									<h6><i class="fa fa-chevron-right" aria-hidden="true"></i> <strong>Amplia Experiencia</strong> en diferentes tipos de eventos y proyectos</h6>
+									<p>Personal con más de 10 años de experiencia en el medio.</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-8 align-self-center hidden-sm-down">
+						<div class="tab-content">
+							<div class="tab-pane fade show active" id="tab-1">
+								<img class="shadow-3" src="{{asset('images/about-001.jpg')}}" alt="...">
+							</div>
+
+							<div class="tab-pane fade" id="tab-2">
+								<img class="shadow-3" src="{{asset('images/about-002.jpg')}}" alt="...">
+							</div>
+
+							<div class="tab-pane fade" id="tab-3">
+								<img class="shadow-3" src="{{asset('images/about-003.jpg')}}" alt="...">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="text-center mt-50">
+					<a class="scroll-down-1 scroll-down" href="#" data-scrollto="experiencia"><span></span></a>
+				</div>
+			</div>
+		</section>
+		<!--
+		|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+		| Worldwide Adoption
+		|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+		!-->
+		<section class="section pb-0 overflow-hidden" id="experiencia">
+			<div class="container">
+				<header class="section-header">
+					<small><strong>Estadísticas</strong></small>
+					<h2>Nuestra Experiencia</h2>
+					<hr>
+					<p class="lead">Nuestro personal cuenta con una <strong>amplia experiencia</strong> en diferentes <strong>proyectos nacionales e internacionales.</strong></p>
+				</header>
+
+				<div class="flexbox flex-grow-all text-center mx-auto w-600 hidden-sm-down">
+					
+					<div>
+						<span class="text-info fs-50">+ </span>
+						<span class="text-info fs-50" data-provide="counter" data-from="0" data-to="100" data-speed="800"></span><br/>
+						<h6>Clientes Satisfechos</h6>
+					</div>
+
+					<div>
+						<span class="text-info fs-50">+ </span>
+						<span class="text-info fs-50" data-provide="counter" data-from="125" data-to="5000" data-speed="1400"></span><br/>
+						<h6>Participantes</h6>
+					</div>
+
+					<div>
+						<span class="text-info fs-50">+ </span>
+						<span class="text-info fs-50" data-provide="counter" data-from="0" data-to="200" data-speed="1900"></span><br/>
+						<h6>Eventos</h6>
+					</div>
+					
+				</div>
+				
+				<div class="row text-center hidden-sm-up">
+					<div class="col-sm-12">
+						<span class="text-info fs-50">+ 100</span><br>
+						<p class="lead">Clientes Satisfechos</p>
+					</div>
+					<div class="col-sm-12">
+						<span class="text-info fs-50">+ 500M</span><br>
+						<p class="lead">Participantes</p>
+					</div>
+					<div class="col-sm-12">
+						<span class="text-info fs-50">+ 200</span><br>
+						<p class="lead">Eventos</p>
+					</div>
+				</div>
+
+				<br><br>
+
+				<div class="row align-items-end hidden-sm-down">
+					<div class="col-md-4 px-50">
+						<img class="opacity-100" src="{{asset('images/acceda-clientes.png')}}" alt="..." data-aos="slide-up"  data-aos-delay="300">
+					</div>
+
+					<div class="col-md-4">
+						<img class="" src="{{asset('images/acceda-team.png')}}" alt="..." data-aos="slide-up">
+					</div>
+
+					<div class="col-md-4 px-50">
+						<img class="" src="{{asset('images/acceda-eventos.png')}}" alt="..." data-aos="slide-up" data-aos-delay="600">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--
+		|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+		| Download Now
+		|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+		!-->
+		<section class="section section-inverse" id="section-servicios" data-parallax="{{asset('images/blurred.jpg')}}">
+			<div class="container">
+				<header class="section-header">
+					<small><strong>ACCEDA A</strong></small>
+					<h2 class="fs-45">Nuestros Servicios</h2>
+					<hr>
+					<p class="lead">Tenemos el <strong>compromiso de ofrecerte nuestros servicios</strong> como una solución integral a tus necesidades. De tal forma que nuestros clientes puedan tener la <strong>información y reportes</strong> de cualquiera de nuestros servicios <strong>en todo momento</strong>.</p>
+				</header>
+				<div class="row center-heading text-center">
+					<div class="col-md-4">
+						<img src="{{asset('images/servicios/eventos.jpg')}}" class="img-circle img-fluid">
+						<h4>Organización de eventos</h4>
+						<p>
+							Servicio de asesoría, logistica y operación de eventos de acuerdo a las necesidades y objetivos definidos por el cliente.
+						</p>
+					</div>
+					<div class="col-md-4">
+						<img src="{{asset('images/servicios/pre-registro.jpg')}}" class="img-circle img-fluid">
+						<h4>Pre-Registro</h4>
+						<p>
+							Sistema con diseño responsivo, intuitivo para los usuarios y funcional para el cliente.
+						</p>
+					</div>
+					<div class="col-md-4">
+						<img src="{{asset('images/servicios/registro-sitio.jpg')}}" class="img-circle img-fluid">
+						<h4>Registro en Sitio</h4>
+						<p>
+							Soluciones integrales que se desarrollan a las necesidades y requerimientos de cada evento.
+						</p>
+					</div>
+				</div>
+				<div class="row center-heading text-center">
+					<div class="col-md-4">
+						<img src="{{asset('images/servicios/telemarketing.jpg')}}" class="img-circle img-fluid">
+						<h4>Telemárketing</h4>
+						<p>
+							Servicio especializado de acuerdo a las diferentes necesidades y objetivos del cliente.
+						</p>
+					</div>
+					<div class="col-md-4">
+						<img src="{{asset('images/servicios/auto-registro.jpg')}}" class="img-circle img-fluid">
+						<h4>Auto Registro</h4>
+						<p>
+							Agilizamos el acceso de tus invitados al evento con diferentes opciones de auto registro.
+						</p>
+					</div>
+					<div class="col-md-4">
+						<img src="{{asset('images/servicios/web.jpg')}}" class="img-circle img-fluid">
+						<h4>Web</h4>
+						<p>
+							Desarrollo de soluciones basadas en web para automatizar los procesos y aumentar la disponibilidad de la información
+						</p>
+					</div>
+				</div>
+				<div class="row justify-content-center text-center">
+					<div class="col-md-4">
+						<img src="{{asset('images/servicios/apps.jpg')}}" class="img-circle img-fluid">
+						<h4>Apps Móviles</h4>
+						<p>
+							Desarrollo de aplicaciones móviles para tus eventos u otras necesidades, disponibles para las diferentes plataformas
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--
+		|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+		| FAQ
+		|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+		!-->
+		<section class="section" id="section-ventajas">
+			<div class="container">
+				<header class="section-header">
+					<small>¿Cómo te apoyamos?</small>
+					<h2>Ventajas</h2>
+					<hr>
+					<p class="lead">Sabemos que <strong>cada evento es diferente</strong> y con sus propias necesidades, es por eso que la mayor parte de nuestra filosofía esta en la dedicación y atención a los detalles, es por eso que <strong>Nuestro Servicio</strong> hace la diferencia con <strong>Nuestros Clientes.</strong></p>
+				</header>
+
+
+
+				<div class="accordion" id="accordion-general">
+					<div class="card">
+						<h5 class="card-title">
+							<a data-toggle="collapse" data-parent="#accordion-general" href="#collapse-general-1">Experiencia</a>
+						</h5>
+
+						<div id="collapse-general-1" class="collapse in">
+							<div class="card-block">
+								Contamos con una amplia <strong>experiencia en el área de registro</strong>, diseñando la logística y operación en sitio de diferentes tipos de <strong>Eventos, Congresos, Expos y Convenciones</strong>.
+							</div>
+						</div>
+					</div>
+
+
+					<div class="card">
+						<h5 class="card-title">
+							<a data-toggle="collapse" data-parent="#accordion-general" href="#collapse-general-2">Confidencialidad</a>
+						</h5>
+
+						<div id="collapse-general-2" class="collapse">
+							<div class="card-block">
+								Conocemos lo delicado del manejo de la <strong>información personal </strong>, valoramos la confianza que nuestros Clientes depositan en nosotros, por tal motivo ponemos <strong>gran cuidado en el manejo y resguardo de la información</strong>.
+							</div>
+						</div>
+					</div>
+
+
+					<div class="card">
+						<h5 class="card-title">
+							<a data-toggle="collapse" data-parent="#accordion-general" href="#collapse-general-3">Soluciones a la Medida</a>
+						</h5>
+
+						<div id="collapse-general-3" class="collapse">
+							<div class="card-block">
+								Cada Cliente y cada evento tiene <strong>diferentes objetivos y requerimientos</strong>, por esta razón consideramos <strong>cada evento como un proyecto nuevo</strong>.
+							</div>
+						</div>
+					</div>
+
+
+					<div class="card">
+						<h5 class="card-title">
+							<a data-toggle="collapse" data-parent="#accordion-general" href="#collapse-general-4">Compromiso</a>
+						</h5>
+
+						<div id="collapse-general-4" class="collapse">
+							<div class="card-block">
+								Sabemos que en los eventos no hay segundas oportunidades, por lo cual <strong>cuidamos cada detalle</strong> de nuestros servicios para <strong>garantizar que todo salga bien</strong> y a la primera.
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</section>
+		<!--
+		|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+		| Partners
+		|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+		!-->
+		<section class="section bg-gray py-40">
+			<div class="container">
+				<header class="section-header">
+					<small>acceda</small>
+					<h2>Algunos de Nuestros Clientes</h2>
+					<hr>
+					<p class="lead">Nuestra motivación es seguir aportando calidad y experiencia en nuestros servicios para continuar creando experiencias de satisfacción en nuestros clientes.</p>
+				</header>
+			  <div class="swiper-container partner" data-autoplay="1000" data-slides-per-view="4">
+			    <div class="swiper-wrapper pb-0">
+			      <div class="swiper-slide"><img src="{{asset('images/clientes/merck.png')}}" alt="..."></div>
+			      <div class="swiper-slide"><img src="{{asset('images/clientes/sectur.png')}}" alt="..."></div>
+			      <div class="swiper-slide"><img src="{{asset('images/clientes/derma.png')}}" alt="..."></div>
+			      <div class="swiper-slide"><img src="{{asset('images/clientes/asofarma-New.png')}}" alt="..."></div>
+			    </div>
+			  </div>
+
+			</div>
+		</section>
+		<!--
+		|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+		| Contact form
+		|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+		!-->
+		<section class="section" id="section-contacto">
+			<div class="container">
+				<header class="section-header">
+					<small>¡Acceda Ahora!</small>
+					<h2>Contacto</h2>
+				</header>
+				<div class="row gap-y">
+					<div class="col-12 col-md-6">
+						<div class="alert alert-danger" id="contact-error" style="display: none;"></div>
+						<div class="alert alert-success" id="contact-success" style="display: none;">We received your message and will contact you back soon.</div>
+						<div class="form-group">
+							<input class="form-control form-control-lg" type="text" id="contact-name" placeholder="Nombre Completo">
+						</div>
+						<div class="form-group">
+							<input class="form-control form-control-lg" type="text" id="contact-email" placeholder="Dirección de Correo Electrónico">
+						</div>
+						<div class="form-group">
+							<textarea class="form-control form-control-lg" rows="4" placeholder="Mensaje de Contacto" id="contact-message"></textarea>
+						</div>
+						<button class="btn btn-lg btn-primary btn-block" id="contact-send">Enviar</button>
+					</div>
+					<div class="col-12 col-md-5 offset-md-1">
+						<div class="bg-grey h-full p-20">
+							<p class="lead">Sabemos que <strong>cada evento es diferente</strong> y con sus propias necesidades, es por eso que la mayor parte de nuestra filosofía esta en la dedicación y atención a los detalles, es por eso que <strong>Nuestro Servicio</strong> hace la diferencia con <strong>Nuestros Clientes.</strong></p>
+
+							<hr class="w-80">
+
+							<div>
+								<span class="d-inline-block w-20 text-lighter" title="Email">E: </span>
+								<span class="fs-14"><a href="mailto:contacto@acceda.mx">contacto@acceda.mx</a></span>
+							</div>
+							<div>
+								<span class="d-inline-block w-20 text-lighter" title="Teléfono">T:</span> 
+								<span class="fs-14"><a href="tel:5534832264"> 55 3483 2264</a> (móvil)</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+{% endblock %}
