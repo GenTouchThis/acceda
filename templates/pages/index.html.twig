@@ -305,19 +305,25 @@
 					<h2>Contacto</h2>
 				</header>
 				<div class="row gap-y">
-					<form class="col-12 col-md-6">
+					<form method="post" name="sendContact" class="col-12 col-md-6">
 						<div class="alert alert-danger" id="contact-error" style="display: none;"></div>
-						<div class="alert alert-success" id="contact-success" style="display: none;">We received your message and will contact you back soon.</div>
+						<div class="alert alert-success" id="contact-success" style="display: none;">Gracias, sus datos fueron envíados con éxito, en breve nos pondremos en contacto con usted.</div>
 						<div class="form-group">
-							<input class="form-control form-control-lg" type="text" id="contact-name" placeholder="Nombre Completo">
+							<input class="form-control form-control-lg" type="text" name="nombre" id="contact-name" placeholder="Nombre Completo" />
 						</div>
 						<div class="form-group">
-							<input class="form-control form-control-lg" type="text" id="contact-email" placeholder="Dirección de Correo Electrónico">
+							<input class="form-control form-control-lg" type="text" name="email" id="contact-email" placeholder="Dirección de Correo Electrónico" />
 						</div>
 						<div class="form-group">
-							<textarea class="form-control form-control-lg" rows="4" placeholder="Mensaje de Contacto" id="contact-message"></textarea>
+							<textarea class="form-control form-control-lg" rows="4" placeholder="Mensaje de Contacto" name="mensaje" id="contact-message"></textarea>
 						</div>
-						<button class="btn btn-lg btn-primary btn-block" id="contact-send">Enviar</button>
+						<div class="form-group">
+  							<label for="captcha" class="control-label">Indique el resultado <strong>{{ one }} + {{ two }}</strong>:</label>
+                        	<input type="number" class="form-control" id="captcha" name="captcha" />
+						</div>
+						<div class="form-group">
+							<button class="btn btn-lg btn-primary btn-block" id="contact-send">Enviar</button>
+						</div>
 					</form>
 					<div class="col-12 col-md-5 offset-md-1">
 						<div class="bg-grey h-full p-20">

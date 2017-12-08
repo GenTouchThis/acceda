@@ -513,33 +513,55 @@
   //----------------------------------------------------/
   thesaas.contact = function() {
 
-    $(document).on('click', '#contact-send', function(){
+    $(document).on('click', '#contact-send', function(e){
+      e.preventDefault();
       
       var name = $("#contact-name").val();
       var email = $("#contact-email").val();
       var message = $("#contact-message").val();
-      var dataString = 'name=' + name + '&email=' + email + '&message=' + message;
+      var captcha = $("#captcha").val();
+      var dataString = 'name=' + name + '&email=' + email + '&message=' + message + "&captcha=" + captcha;
       var validEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       var error = $('#contact-error');
 
       if (email.length < 1) {
-        error.html('Please enter your email address.').fadeIn(500);
+        error.html('Por favor, ingrese su correo electrónico.').fadeIn(500);
         return;
       }
 
       if (!validEmail.test(email)) {
-        error.html('Please enter a valid email address.').fadeIn(500);
+        error.html('Por favor, ingrese un correo electrónico valido.').fadeIn(500);
+        return;
+      }
+
+      if (name.length < 1) {
+        error.html('Por favor, ingrese su nombre.').fadeIn(500);
+        return;
+      }
+
+      if (message.length < 1) {
+        error.html('Por favor, ingrese un mensaje.').fadeIn(500);
+        return;
+      }
+
+      if (captcha.length < 1) {
+        error.html('Por favor, ingrese el resultado de la suma.').fadeIn(500);
         return;
       }
 
       $.ajax({
         type: "POST",
-        url: "assets/php/sendmail.php",
+        url: "./sendContact",
         data: dataString,
-        success: function () {
-          error.fadeOut(400);
-          $('#contact-success').fadeIn(1000);
-          $("#contact-name, #contact-email, #contact-message").val('');
+        success: function (res) {
+          if (res.status) {
+            error.fadeOut(400);
+            $('#contact-success').fadeIn(1000);
+            $("#contact-name, #contact-email, #contact-message, #captcha").val('');
+          } else {
+            error.html(res.message).fadeIn(500);
+            return;
+          }
         },
         error: function() {
           error.html('There is a problem in our email service. Please try again later.').fadeIn(500);
