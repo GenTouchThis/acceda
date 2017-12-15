@@ -35,14 +35,22 @@ $app->post('/sendContact', function (Request $request) use ($app) {
                 )
             );
 
-            $message = \Swift_Message::newInstance()
+            $transport = (new Swift_SmtpTransport('webmail.acceda.com.mx', 26))
+                ->setUsername('no-reply@acceda.mx')
+                ->setPassword('4eNo_[8.gRA6');
+
+            $mailer = new Swift_Mailer($transport);
+
+            $message = (new Swift_Message('Wonderful Subject'))
                 ->setSubject('Contacto acceda.mx')
-                ->setFrom('no-reply@acceda.mx')
-                ->setTo($request->request->get('email'))
-               // ->setBcc('rodrigo@acceda.mx')
+                ->setFrom(['no-reply@acceda.mx' => 'Contacto acceda'])
+                ->setBcc(['rodrigo@acceda.mx' => 'Rodrigo Ramírez'])
+                ->setTo([$request->request->get('email') => $request->request->get('name')])
                 ->setBody($body, 'text/html');
 
-           // $app['mailer']->send($message);
+            // Send message
+            $result = $mailer->send($message);
+
             $json["status"] = true;
         } else {
             $json['message'] = "El resultado es incorrecto, intentalo de nuevo por favor.";
