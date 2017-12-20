@@ -551,7 +551,7 @@
 
       $.ajax({
         type: "POST",
-        url: "./sendContact",
+        url: "./index.php/sendContact",
         data: dataString,
         success: function (res) {
           if (res.status) {
